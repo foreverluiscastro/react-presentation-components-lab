@@ -2,7 +2,7 @@
 import React from 'react';
 
 const SimplerComponent = props => 
-    <div onClick={props.onClick}>
+    <div onClick={props.handleClick}>
         I am just happy.
     </div>
 
