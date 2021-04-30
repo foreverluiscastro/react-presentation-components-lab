@@ -5,12 +5,12 @@ export default class SimpleComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            mood: ""
+            mood: "happy"
         };
     }
     
 
-    handleClick = e => {
+    handleClick = () => {
         this.setState({
             mood: "sad"
         })
@@ -19,12 +19,12 @@ export default class SimpleComponent extends Component {
     render() {
         return (
             <div onClick={this.handleClick}>
-                {this.props.mood}
+                {this.state.mood}
             </div>
         )
     }
 }
 
-SimpleComponent.defaultProps = {
-    mood: "happy"
-}
+// SimpleComponent.defaultProps = {
+//     mood: "happy"
+// }
